@@ -45,10 +45,16 @@ public class WhileLoop {
         return "There were" + posCount + "positive and" + negCount + "negative numbers.";
 
     }
-    public static int findMinAndMax(int num) {
-        int max = num = 0;
+    public static int findMinAndMax() {
+        int max = 0;
+        return 0;
+
 
     }
+    public static int gradePoint() {
+return 0;
+    }
+
     public static void main(String [] args) {
         System.out.println(fromHereToThere(20,30));
         System.out.println(factors(12));
