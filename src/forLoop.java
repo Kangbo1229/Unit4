@@ -3,25 +3,35 @@ import java.util.Scanner;
 public class forLoop {
     Scanner scan = new Scanner(System.in);
 
-    public static void printingHashTags() {
-        for (int i = 0; i < 7; i++)
-            System.out.print("#");
+    public static String printingHashTags(int num) {
+        String blank = "";
+        for (int i = 0; i < num; i++) {
+            blank += "#";
+        }
+        return blank;
     }
 
-        public static void countdown() {
-            for (int x = 10; x >= 0; x -= 1)
-                System.out.print(x + " ");
+        public static String countdown(int num, int num2) {
+            String count = "";
+            for (int x = 10; x >= num; x -= 1) {
+                count += x+" ";
+            }
+            return count;
+        }
+
+        public static String countdown2(int num, int num2) {
+            String count2 = "";
+            for (int x = 10; x <= num; x -= 1) {
+                count2 += x+" ";
+            }
+            return count2;
 
         }
-        public static void countdown2() {
-            for ()
+        public static void main(String[] args) {
+            //System.out.println(printingHashTags(20));
+            //System.out.print(countdown(0, 10));
+            System.out.print(countdown2(10,0));
 
-        }
-        public static void main(String args[]){
-            //System.out.print("printingHashTags(7)-> ");
-            //printingHashTags();
-            //System.out.print("countDown(0,10)-> ");
-            //countdown();
 
         }
 }
