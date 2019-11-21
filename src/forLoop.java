@@ -25,22 +25,32 @@ public class forLoop {
         public static String countdown2(int num, int num2) {
             String count2 = "";
             int start;
+            int end;
             if (num > num2) {
                 start = num;
+                end = num2;
             }
             else {
                 start = num2;
+                end = num;
             }
-            for (int x = start; x <= num; x -= 1) {
+
+            for (int x = start; x >= end; x-=1) {
                 count2 += x+" ";
             }
             return count2;
 
         }
+        public static String sumNumbers(int num, int num2) {
+
+        }
+
+
         public static void main(String[] args) {
             //System.out.println(printingHashTags(20));
             //System.out.print(countdown(10, 0));
-            System.out.print(countdown2(10,0));
+            //System.out.print(countdown2(0,10));
+            //System.out.print(sumNumbers(5,10));
 
 
         }
