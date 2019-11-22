@@ -41,16 +41,32 @@ public class forLoop {
             return count2;
 
         }
-        public static String sumNumbers(int num, int num2) {
+        public static int sumNumbers(int num, int num2) {
+            int total = 0;
+            int start;
+            int end;
+            if (num > num2) {
+                start = num;
+                end = num2;
+            }
+            else {
+                start = num2;
+                end = num;
+            }
+            for (int x = end; x <= start; x++) {
+                total += x;
+
+            }
+            return total;
 
         }
 
 
         public static void main(String[] args) {
-            //System.out.println(printingHashTags(20));
+            System.out.println(printingHashTags(0));
             //System.out.print(countdown(10, 0));
             //System.out.print(countdown2(0,10));
-            //System.out.print(sumNumbers(5,10));
+            //System.out.print(sumNumbers(10,5));
 
 
         }
