@@ -14,7 +14,7 @@ public class forLoop {
 
         }
         public static void countdown2() {
-            for ()
+            //for ()
 
         }
         public static void main(String args[]){
